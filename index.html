@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Fractal Generator</title>
+    </head>
+    <body>
+        <div style="margin-left: 5%;" id="container">
+            <input type="text" placeholder="Input first Interation"><br>
+            <input type="text" placeholder="Input Stop Condition"><br>
+            <input type="radio" name="size-it" value="0" checked>Last iteration<br>
+            <input type="radio" name="size-it" value="1">All iterations<br>
+            <small>If you want to use <i>Iteration</i>, use <strong>i</strong></small>
+            <div id="inputs-container">
+                <input type="text" id="1-polygon" placeholder="1st polygon">
+            </div><br>
+            <small>Ex: [[x1/2,y1/3],[x2*2,y2+10],[x3*(40/100),y3-(y1+y2)]]</small><br>
+            <small>first `[]` means the polygon, each `[]` inside polygon means dot. The number of dots determine the type of polygon.</small><br>
+            <button id="btn-input">Add new input</button>
+            <br>
+            <br>
+            <button id="generate">Generate</button>
+        </div>
+    </body>
+</html>
